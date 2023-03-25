@@ -1,3 +1,5 @@
+let display = document.querySelector("displayNum");
+
 function add (num1, num2) {
     return num1 + num2;
 }
@@ -27,3 +29,13 @@ function operate(operator, num1, num2) {
     }
 
 }
+
+let numButtons = document.getElementsByClassName("number");
+for (let i = 0; i < numButtons.length; i++) {
+    numButtons[i].addEventListener("click", numDisplay);
+}
+
+function numDisplay(e) {
+    document.querySelector("displayNum").textContent = 69;
+}
+
