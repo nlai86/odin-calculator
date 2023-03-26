@@ -1,4 +1,11 @@
-let display = document.querySelector("displayNum");
+const numberButtons = document.querySelectorAll('[data-number]');
+const operationButtons = document.querySelectorAll('[data-operation]');
+const equalsButton = document.querySelector('[data-equals]');
+const deleteButton = document.querySelector('[data-delete]');
+const clearButton = document.querySelector('[data-clear]');
+const currentDisplay = document.querySelector("[data-currentDisplay]");
+const previousDisplay = document.querySelector("[data-previousDisplay]")
+let displayValue = 0;
 
 function add (num1, num2) {
     return num1 + num2;
@@ -36,6 +43,10 @@ for (let i = 0; i < numButtons.length; i++) {
 }
 
 function numDisplay(e) {
-    document.querySelector("displayNum").textContent = 69;
+
+    display.textContent = displayValue;
 }
 
+function appendNumber(number) {
+    display.textContent += number; 
+}
