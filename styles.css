@@ -83,6 +83,15 @@ body {
     grid-column: span 2;
 } 
 
-.add {
+#add {
     grid-row: span 2;
+}
+
+.disclaimer {
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
